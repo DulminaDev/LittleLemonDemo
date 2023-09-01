@@ -1,0 +1,115 @@
+.body{
+    background-color: #edefeeff;
+}
+/* -------------------Header CSS------------------- */
+
+
+header {
+    text-align: center;
+    background-color: #edefeeff;
+}
+
+.header-logo{
+    width: 50%;
+    margin: 40px;
+}
+
+nav {
+    margin: 25px 10%;
+    border-radius: 15px;
+}
+
+nav div {
+    margin: 0;
+}
+
+ul{
+   margin: 0 auto;
+}
+
+li {
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+nav a{
+    margin: 0;
+}
+
+
+/* -------------------Main CSS------------------- */
+
+main {
+    background-color: #edefeeff;
+}
+
+.banner {
+    margin: 10px;
+    position: relative;
+    padding: 50px;
+    border-radius: 25px;
+    background-image: url("https://w.wallhaven.cc/full/6o/wallhaven-6op6gw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: 0.4s; /* Add a smooth transition effect */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    border-radius: 25px;
+    transition: background-color 0.4s; /* Smoothly transition background color */
+}
+
+.banner:hover::before {
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity */
+}
+
+.banner-header {
+    color: white;
+}
+
+.banner-p {
+    color: white;
+    width: 80%;
+}
+
+/* Define a keyframes animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with no opacity */
+    }
+    100% {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+/* Apply the animation to .card elements */
+.card {
+    margin: 20px auto;
+    height: 500px;
+    animation: fadeIn 2s ease-in-out; /* Apply the fadeIn animation with a 1-second duration */
+}
+
+.card img {
+    height: 185px;
+}
+
+
+/* -------------------Footer CSS------------------- */
+
+footer {
+    background-color: #edefeeff;
+    padding: 25px 5%;
+}
+
+footer p {
+    text-align: right;
+    
+}
